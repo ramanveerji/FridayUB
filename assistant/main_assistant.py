@@ -13,7 +13,7 @@ from datetime import datetime
 import gtts
 import requests
 from google_trans_new import google_translator
-from google_trans_new import LANGUAGES
+from googletrans import LANGUAGES
 from gtts import gTTS
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
