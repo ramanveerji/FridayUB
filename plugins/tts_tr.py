@@ -107,8 +107,8 @@ async def tr_pls(client, message):
     if not source_lan:
         return await event.edit(engine.get_string("NEEDS_C_INPUT"))
     tr_text = f"""<b>Source ({source_lan.capitalize()})</b>
-<b>Translation ({transl_lan.capitalize()})</b>:
-<br><code>{translated}</code>"""
+<b>Translation ({transl_lan.capitalize()})</b>:\n
+<code>{translated}</code>"""
     if len(tr_text) >= 4096:
         url = "https://del.dog/documents"
         r = requests.post(url, data=translated.encode("UTF-8")).json()
